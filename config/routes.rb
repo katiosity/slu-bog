@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'main/index'
+
   get 'creatures/index'
 
   get 'creatures/create'
@@ -12,6 +14,8 @@ Rails.application.routes.draw do
   get 'creatures/update'
 
   get 'creatures/destroy'
+
+  root 'main#index'
 
   resources :creatures
 
